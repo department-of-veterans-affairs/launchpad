@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = json.loads(os.environ['DJANGO_ALLOWED_HOST'])
+ALLOWED_HOSTS = json.loads(os.environ['DJANGO_ALLOWED_HOSTS'])
 
 
 # Application definition
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'launchpad.wsgi.application'
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.eviron['DB_NAME'],
-            'USER': os.eviron['DB_USERNAME'],
-            'PASSWORD': os.eviron['DB_PASSWORD'],
-            'HOST': os.eviron['DB_HOST'],
+            'NAME': os.environ['DB_NAME'],
+            'USER': os.environ['DB_USERNAME'],
+            'PASSWORD': os.environ['DB_PASSWORD'],
+            'HOST': os.environ['DB_HOST'],
             'PORT': '5432',
     }
 }

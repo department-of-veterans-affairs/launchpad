@@ -239,6 +239,17 @@ class studyTeamData(models.Model):
 
 
 class Record(models.Model):
+
+    # Registry status choices.
+    INDEXED = 'IN'
+    ICSCREEN = 'IC'
+    STUDYTEAM = 'ST'
+    registry_status_choices = [
+        (INDEXED, 'Indexed'),
+        (ICSCREEN, 'iCScreen'),
+        (STUDYTEAM, 'studyTeam')
+    ]
+
     submissionId = models.SlugField(max_length=200, unique=True, blank=False)
     registrantData = models.ForeignKey(
                         RegistrantData, on_delete=models.CASCADE)
@@ -246,6 +257,10 @@ class Record(models.Model):
                         iCData, on_delete=models.CASCADE)
     studyTeamData = models.ForeignKey(
                         studyTeamData, on_delete=models.CASCADE)
+    registryStatus = models.CharField(max_length=2,
+                                      choices=registry_status_choices,
+                                      default=INDEXED)
+                                      
     # Timestamps.
     recordCreatedDateTime = models.DateTimeField(auto_now_add=True)
     recordLastModifiedDateTime = models.DateTimeField(auto_now=True)
