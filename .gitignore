@@ -3,3 +3,4 @@
 *.pem
 *.old
 outfile*
+launchpad/static
