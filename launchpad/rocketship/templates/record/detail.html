@@ -1,0 +1,402 @@
+<!-- {% extends "record/base.html" %} -->
+{% load templatetags %}
+
+
+{{ object }}
+
+  <main id="main-content">
+    <div class="grid-container">
+      <form action="/record/update/{{ object.id }}/" method="post">
+        {% csrf_token %}
+      <div class="grid-row">
+        <div class="tablet:grid-col-auto">
+          <p>
+          {% if not view.edit_mode %}
+            <a href="/record/{{ object.id }}/" class="usa-button">Close without saving</a>
+            <button type="submit" class="usa-button usa-button--secondary">Save changes</button>
+          {% else %}
+            <a href="/record/edit/{{ object.id }}" class="usa-button">Edit this record</a>
+          {% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="tablet:grid-col-auto">
+
+        <!-- ID -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  ID:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+            {{ object.submissionId }}
+            </span>
+          </div>
+        </div>
+
+        <!-- First name -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Comments:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.iCData.iCComments }}
+              {% else %}
+                <textarea name="iCData::iCComments" id="iCComments-input" style="height:100px">{{ object.iCData.iCComments }}</textarea>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+
+        <!-- First name -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  First name:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.firstName|first_letter_upper }}
+              {% else %}
+                <input type="text" id="firstName-input" name="firstName" value="{{ object.registrantData.firstName|first_letter_upper }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <!-- Last name -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Last name:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.lastName|first_letter_upper }}
+              {% else %}
+                <input type="text" id="firstName-input" name="lastName" value="{{ object.registrantData.lastName|first_letter_upper }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        </div>
+
+        <!--DOB -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Date of birth:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.veteranDateOfBirth|clean_date }}
+              {% else %}
+                <input type="text" id="firstName-input" name="veteranDateOfBirth" value="{{ object.registrantData.veteranDateOfBirth|clean_date }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <!--Age (calucalated dynamically; cannot be edited)-->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Age:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {{ object.registrantData.age }}
+            </span>
+          </div>
+        </div>
+
+        <!--Phone -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Phone:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.phone }}
+              {% else %}
+                <input type="text" id="phone-input" name="phone" value="{{ object.registrantData.phone }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <!--Zip code -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Zip code:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.zipCode }}
+              {% else %}
+                <input type="text" id="zipCode-input" name="zipCode" value="{{ object.registrantData.zipCode }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <!--Timezone (calucalated dynamically based on zip; cannot be edited) -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Timezone:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+                {{ object.registrantData.timezone }}
+            </span>
+          </div>
+        </div>
+
+        <!--State (calucalated dynamically based on zip; cannot be edited) -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  State:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+                {{ object.registrantData.state }}
+            </span>
+          </div>
+        </div>
+
+
+        <!--Email -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Phone:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              {% if view.edit_mode %}
+                {{ object.registrantData.email }}
+              {% else %}
+                <input type="text" id="email-input" name="email" value="{{ object.registrantData.email }}"></input>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        <!--Health history -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Health history:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.HEALTH_HISTORY.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="HEALTH_HISTORY::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="HEALTH_HISTORY::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <!--Genders -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Gender(s):
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.GENDER.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="GENDER::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="GENDER::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <!--Race, ethnicity, or origins(s) -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Race, ethnicity, or origins(s):
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.RACE_ETHNICITY.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="RACE_ETHNICITY::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="RACE_ETHNICITY::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <!--Employment status(es) -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Employment status(es):
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.EMPLOYMENT_STATUS.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="EMPLOYMENT_STATUS::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="EMPLOYMENT_STATUS::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <!--VA relationship -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  VA relationship:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.VETERAN.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="VETERAN::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="VETERAN::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <!--Transportation -->
+        <div class="grid-row grid-gap-lg" style="padding-top:10px">
+          <div class="tablet:grid-col-4">
+              <span>
+                <strong>
+                  Transportation:
+                </strong>
+              </span>
+          </div>
+          <div class="tablet:grid-col-4">
+            <span>
+              <ul class="usa-list usa-list--unstyled">
+              {% for option, value in object.registrantData.TRANSPORTATION.get_all_options_and_values.items %}
+                {% if value %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="TRANSPORTATION::{{ option }}" checked {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% else %}
+                  <li><input type="checkbox" id="{{ option }}-input" name="TRANSPORTATION::{{ option }}" {{ view.edit_mode }}>
+                    {{ option|underscore_to_space|first_letter_upper }}
+                  </input></li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+
+  </div>
+  </main>
