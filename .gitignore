@@ -4,3 +4,5 @@
 *.old
 outfile*
 launchpad/static
+prod_setup.sh
+static
