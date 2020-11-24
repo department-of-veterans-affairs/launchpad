@@ -3,6 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path(route='file_list/', view=views.files_list),
+    path(route='download/<str:file_name>', view=views.download),
     path(route='', view=views.index, name='index'),
     path(route='record/', view=views.IndexView.as_view(), name='record_index'),
     path(route='record/<int:pk>/', view=views.DetailView.as_view(),
