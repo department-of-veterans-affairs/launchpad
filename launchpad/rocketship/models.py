@@ -1,7 +1,4 @@
 import sys
-print(sys.path)
-
-
 from django.db import models
 import datetime as dt
 import zipcodes
@@ -19,8 +16,6 @@ class Facility(models.Model):
 
 
 class MultiSelectMixin(models.Model):
-
-    id = models.IntegerField(default=0, primary_key=True)
 
     class Meta:
         abstract = True
@@ -114,19 +109,21 @@ class RegistrantData(models.Model):
     email = models.EmailField(max_length=254)
     zipCode = models.CharField(max_length=5)
     veteranDateOfBirth = models.DateField()
-    GENDER = models.ForeignKey(Gender, on_delete=models.PROTECT)
+    GENDER = models.ForeignKey('Gender', on_delete=models.PROTECT)
     GENDER_SELF_IDENTIFY_DETAILS = models.CharField(max_length=200)
-    RACE_ETHNICITY = models.ForeignKey(RaceEthnicity, on_delete=models.PROTECT)
-    VETERAN = models.ForeignKey(Veteran, on_delete=models.PROTECT)
+    RACE_ETHNICITY = models.ForeignKey('RaceEthnicity',
+                                       on_delete=models.PROTECT)
+    VETERAN = models.ForeignKey('Veteran', on_delete=models.PROTECT)
     diagnosed = models.CharField(max_length=200)
     closeContactPositive = models.CharField(max_length=200)
     hospitalized = models.CharField(max_length=200)
     smokeOrVape = models.CharField(max_length=200)
-    HEALTH_HISTORY = models.ForeignKey(HealthHistory, on_delete=models.PROTECT)
+    HEALTH_HISTORY = models.ForeignKey('HealthHistory',
+                                       on_delete=models.PROTECT)
     EMPLOYMENT_STATUS = models.ForeignKey(
-                        EmploymentStatus, on_delete=models.PROTECT)
+                        'EmploymentStatus', on_delete=models.PROTECT)
     TRANSPORTATION = models.ForeignKey(
-                        Transportation, on_delete=models.PROTECT)
+                        'Transportation', on_delete=models.PROTECT)
     residentsInHome = models.CharField(max_length=200)
     closeContact = models.CharField(max_length=200)
     consentAgreementAccepted = models.CharField(max_length=200)

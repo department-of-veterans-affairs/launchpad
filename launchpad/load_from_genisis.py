@@ -8,9 +8,12 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
 
+import datetime as dt
+import json
 from rocketship.models import RegistrantData, iCData, studyTeamData, \
                             Record, HealthHistory, Gender, RaceEthnicity, \
                             Transportation, EmploymentStatus, Veteran
+from django.db.utils import IntegrityError
 
 
 def create_unique_id(form_questions, created_datetime):
@@ -54,69 +57,94 @@ def create_registrant_data(form_question_list):
 
 
 def main(fname):
-    #fname = 'genisis_data.json'
     with open(fname) as infile:
         genisis_data = json.loads(infile.read())
-    count = 0
+    pks = []
     for submission in genisis_data:
-        count += 1
-        print(f'{count} of {len(genisis_data)}')
         submission_id = create_unique_id(
             submission['FormQuestions'],
             submission['CreatedDateTime']
         )
-        try:
-            queryset = Record.objects.get(submissionId=submission_id)
-            if queryset:
-                #print('Record found, skipping...')
-                continue
-        except Record.DoesNotExist:
-            print('Creating new record...')
-
+        if Record.objects.get(submissionId=submission_id):
+            # Skip if submission id exists.
+            continue
         registrant_data = create_registrant_data(submission['FormQuestions'])
-        print(registrant_data)
-        kwargs = {'formData': submission}
-        for k, v in registrant_data.items():
-            if k == 'HEALTH_HISTORY':
-                kwargs[k] = HealthHistory(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'EMPLOYMENT_STATUS':
-                kwargs[k] = EmploymentStatus(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'TRANSPORTATION':
-                kwargs[k] = Transportation(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'GENDER':
-                kwargs[k] = Gender(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'RACE_ETHNICITY':
-                kwargs[k] = RaceEthnicity(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'VETERAN':
-                kwargs[k] = Veteran(**{i: True for i in v})
-                kwargs[k].save()
-            elif k == 'zipCode':
-                kwargs[k] = v[0:5]
-            elif k == 'veteranDateOfBirth':
-                kwargs[k] = dt.datetime.strptime(v, '%Y-%m-%d')
-            else:
-                kwargs[k] = v
+        health_history = HealthHistory.objects.create(
+            **{i: True for i in registrant_data['HEALTH_HISTORY']})
+        health_history.save()
 
-        registrant_data_obj = RegistrantData(**kwargs)
+        employment_status = EmploymentStatus.objects.create(
+            **{i: True for i in registrant_data['EMPLOYMENT_STATUS']})
+        employment_status.save()
 
-        ic_data_obj = iCData()
-        study_team_data_obj = studyTeamData()
-        record_obj = Record(
-            submissionId=submission_id,
-            registrantData=registrant_data_obj,
-            iCData=ic_data_obj,
-            studyTeamData=study_team_data_obj
+        transportation = Transportation.objects.create(
+            **{i: True for i in registrant_data['TRANSPORTATION']})
+        transportation.save()
+
+        gender = Gender.objects.create(
+            **{i: True for i in registrant_data['GENDER']})
+        gender.save()
+
+        race_ethnicity = RaceEthnicity.objects.create(
+            **{i: True for i in registrant_data['RACE_ETHNICITY']})
+        race_ethnicity.save()
+
+        veteran = Veteran.objects.create(
+            **{i: True for i in registrant_data['VETERAN']})
+        veteran.save()
+
+        registrant_data_obj = RegistrantData.objects.create(
+            HEALTH_HISTORY=health_history,
+            EMPLOYMENT_STATUS=employment_status,
+            TRANSPORTATION=transportation,
+            GENDER=gender,
+            RACE_ETHNICITY=race_ethnicity,
+            VETERAN=veteran,
+            formData=submission,
+            firstName=registrant_data['firstName'],
+            middle=registrant_data.get('middle', ''),
+            lastName=registrant_data['lastName'],
+            suffix=registrant_data.get('suffix', ''),
+            phone=registrant_data['phone'],
+            email=registrant_data['email'],
+            zipCode=registrant_data['zipCode'][0:5],
+            veteranDateOfBirth=dt.datetime.strptime(
+                registrant_data['veteranDateOfBirth'], '%Y-%m-%d'),
+            GENDER_SELF_IDENTIFY_DETAILS=registrant_data.get(
+                'GENDER_SELF_IDENTIFY_DETAILS', ''),
+            diagnosed=registrant_data['diagnosed'],
+            closeContactPositive=registrant_data['closeContactPositive'],
+            hospitalized=registrant_data['hospitalized'],
+            smokeOrVape=registrant_data['smokeOrVape'],
+            residentsInHome=registrant_data['residentsInHome'],
+            closeContact=registrant_data['closeContact'],
+            consentAgreementAccepted=registrant_data[
+                'consentAgreementAccepted'],
         )
-        for obj in [registrant_data_obj, ic_data_obj, study_team_data_obj,
-                    record_obj]:
-            obj.save()
+        registrant_data_obj.save()
+
+        ic_data_obj = iCData.objects.create()
+        ic_data_obj.save()
+
+        study_team_data_obj = studyTeamData.objects.create()
+        study_team_data_obj.save()
+        try:
+            record_obj = Record(
+                submissionId=submission_id,
+                registrantData=registrant_data_obj,
+                iCData=ic_data_obj,
+                studyTeamData=study_team_data_obj,
+                createdDateTime=dt.datetime.strptime(
+                    submission['CreatedDateTime'], '%Y-%m-%dT%H:%M:%SZ')
+                )
+            record_obj.save()
+        except IntegrityError:
+            # Skip if submission already exists to prevent data being overwritten.
+            pass
+        pks.append(record_obj.pk)
+    return pks
+
 
 if __name__ == '__main__':
     genisis_fname = sys.argv[1] # Should be the fn to read in
     main(fname=genisis_fname)
-
