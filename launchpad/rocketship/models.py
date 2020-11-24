@@ -4,7 +4,7 @@ print(sys.path)
 
 from django.db import models
 import datetime as dt
-from pyzipcode import ZipCodeDatabase
+import zipcodes
 from rocketship.config import TIME_ZONE_MAPPINGS
 from rocketship.utilities.geography import distance_between_points
 
@@ -145,30 +145,24 @@ class RegistrantData(models.Model):
 
     @property
     def state(self):
-        zipcode_database = ZipCodeDatabase()
-        try:
-            zipcode_obj = zipcode_database[self.zipCode]
-        except IndexError:
-            return 'Unknown'
-        return zipcode_obj.state
+        match = zipcodes.matching(f'{self.zipCode[0:5]}')
+        if match:
+            return match[0]['state']
+        return None
 
     @property
     def timezone(self):
-        zipcode_database = ZipCodeDatabase()
-        try:
-            zipcode_obj = zipcode_database[self.zipCode[0:5]]
-        except IndexError:
-            return 'Unknown'
-        return TIME_ZONE_MAPPINGS[zipcode_obj.timezone]
+        match = zipcodes.matching(f'{self.zipCode[0:5]}')
+        if match:
+            return match[0]['timezone']
+        return None
 
     @property
     def lat_lng(self):
-        zipcode_database = ZipCodeDatabase()
-        try:
-            zipcode_obj = zipcode_database[self.zipCode]
-        except IndexError:
-            return None
-        return (zipcode_obj.latitude, zipcode_obj.longitude)
+        match = zipcodes.matching(f'{self.zipCode[0:5]}')
+        if match:
+            return (float(match[0]['lat']), float(match[0]['long']))
+        return None
 
     def distance_to_vha(self, vha_code):
         try:
@@ -251,6 +245,7 @@ class Record(models.Model):
     ]
 
     submissionId = models.SlugField(max_length=200, unique=True, blank=False)
+    createdDateTime = models.DateTimeField(default=dt.datetime(2020, 1, 16))
     registrantData = models.ForeignKey(
                         RegistrantData, on_delete=models.CASCADE)
     iCData = models.ForeignKey(
@@ -260,7 +255,7 @@ class Record(models.Model):
     registryStatus = models.CharField(max_length=2,
                                       choices=registry_status_choices,
                                       default=INDEXED)
-                                      
+
     # Timestamps.
     recordCreatedDateTime = models.DateTimeField(auto_now_add=True)
     recordLastModifiedDateTime = models.DateTimeField(auto_now=True)

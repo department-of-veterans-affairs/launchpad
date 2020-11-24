@@ -3,6 +3,6 @@ Django==3.1.3
 psycopg2==2.8.6
 python-dateutil==2.8.1
 pytz==2020.4
-pyzipcode==2.0.0
+zipcodes
 six==1.15.0
 sqlparse==0.4.1
