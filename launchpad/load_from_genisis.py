@@ -68,7 +68,7 @@ def main(fname):
         try:
             queryset = Record.objects.get(submissionId=submission_id)
             if queryset:
-                print('Record found, skipping...')
+                #print('Record found, skipping...')
                 continue
         except Record.DoesNotExist:
             print('Creating new record...')
@@ -118,11 +118,5 @@ def main(fname):
 
 if __name__ == '__main__':
     genisis_fname = sys.argv[1] # Should be the fn to read in
-    f = open("helloworld.txt", "wb")
-    f.write("hello world".encode())
-    f.close()
     main(fname=genisis_fname)
-    f = open("/home/ubuntu/launchpad/cron.log", "a")
-    f.write("\n I finished the python script \n".encode())
-    f.close()
 
