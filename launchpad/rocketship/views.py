@@ -10,6 +10,36 @@ def index(request):
     return HttpResponse('Hello world, you are at the rocketship index.')
 
 
+def download_file(request):
+    path_to_file = '/home/ubuntu/launchpad/test.txt'
+    f = open(path_to_file, 'rb')
+    myfile = File(f)
+    response = HttpResponse(myfile, content_type='application/text/csv')
+    response['Content-Disposition'] = 'attachment; filename=filename'
+    return response
+
+#def download_file(request):
+#    import mimetypes
+#    f1_path = '/rocketship/template/record/base.html'
+#
+#    f1 = open(f1_path, 'rb')
+#    mime_type, _ = mimetypes.guess_type(f1_path)
+#    response = HttpResponse(f1, content_txt=mime_type)
+#    response['Content-Disposition'] = "attachment; filename=%" % filename
+#    return response
+
+
+def study_list(request):
+    response = f'Select study list to download'
+
+    return HttpResponse(response)
+
+
+def study_list_id(request, facility):
+    response = f'Study list for facility {facility}'
+    return HttpResponse(response)
+
+
 class IndexView(generic.ListView):
     template_name = 'record/index.html'
     context_object_name = 'record_index_list'
