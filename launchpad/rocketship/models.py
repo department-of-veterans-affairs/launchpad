@@ -129,6 +129,8 @@ class RegistrantData(models.Model):
     consentAgreementAccepted = models.CharField(max_length=200)
     # Original data.
     formData = models.JSONField()
+    # Near facilities
+    facilities_w_in_100_mi = models.ManyToManyField(Facility)
     # Timestamps.
     registrantDataLastModifiedDateTime = models.DateTimeField(auto_now=True)
     registrantDataCreatedDateTime = models.DateTimeField(auto_now_add=True)
@@ -171,7 +173,7 @@ class RegistrantData(models.Model):
             return None
         return distance_between_points(
             self.lat_lng, (facility_info.lat, facility_info.lng))/1.609
-
+            
 
 class iCData(models.Model):
     iCRepresentativeName = models.CharField(max_length=200)
