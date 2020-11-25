@@ -65,7 +65,7 @@ def main(fname):
             submission['FormQuestions'],
             submission['CreatedDateTime']
         )
-        if Record.objects.get(submissionId=submission_id):
+        if Record.objects.filter(submissionId=submission_id).exists():
             # Skip if submission id exists.
             continue
         registrant_data = create_registrant_data(submission['FormQuestions'])

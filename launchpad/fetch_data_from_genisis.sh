@@ -6,12 +6,12 @@ GENISIS_USERNAME=$GENISIS_USERNAME
 GENISIS_PASSWORD=$GENISIS_PASSWORD
 URL=$GENISIS_URL
 
-WORKING_DIR="/home/ubuntu/launchpad"
+WORKING_DIR="."
 
 mkdir -p ${WORKING_DIR}"/data"
 
 TMP_FILE=${WORKING_DIR}"/data/tmp.json"
-OUT_FILE=${WORKING_DIR"/data/genisis_data.json"
+OUT_FILE=${WORKING_DIR}"/data/genisis_data.json"
 MAX_TIME="-m 1000"
 LOG_FILE=${WORKING_DIR}"/data/cron.log"
 
@@ -39,10 +39,10 @@ fi
 mv ${TMP_FILE} ${OUT_FILE}
 
 echo "Loading into postgres" >> ${LOG_FILE}
-source /home/ubuntu/launchpadenv/bin/activate
-python /home/ubuntu/launchpad/load_from_genisis.py ${OUT_FILE} >> ${LOG_FILE} 2>&1
+source ${WORKING_DIR}/../launchpadenv/bin/activate
+python ${WORKING_DIR}/load_from_genisis.py ${OUT_FILE} >> ${LOG_FILE} 2>&1
 
-python /home/ubuntu/launchpad/check_num_records.py >> ${LOG_FILE}
+python ${WORKING_DIR}/check_num_records.py >> ${LOG_FILE}
 
 END_TIME=$(date)
 echo "Complete - yay! at: "${END_TIME} >> ${LOG_FILE}

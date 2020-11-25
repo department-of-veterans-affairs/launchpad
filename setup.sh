@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Create virtual environment and load required packages
 
 python3 -m venv launchpadenv

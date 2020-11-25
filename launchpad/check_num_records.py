@@ -7,5 +7,5 @@ django.setup()
 from rocketship.models import RegistrantData
 
 all_records = RegistrantData.objects.all()
-print("Total num records")
-print(len(all_records))
+num_records = len(all_records)
+print(f"Total num records: {num_records}")
