@@ -10,3 +10,23 @@ TIME_ZONE_MAPPINGS = {
     +10: 'Chamorro',
     +12: 'Wake',
 }
+
+study_sites = [
+    'vha_501',
+    'vha_508',
+    'vha_554',
+    'vha_512',
+    'vha_521',
+    'vha_526',
+    'vha_537',
+    'vha_544',
+    'vha_549',
+    'vha_558',
+    'vha_573',
+    'vha_598',
+    'vha_629',
+    'vha_644',
+    'vha_654',
+    'vha_662',
+    'vha_673',
+]
