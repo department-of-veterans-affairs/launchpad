@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('rocketship/', include('rocketship.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')), # Auth urls (login/logout)
 ]

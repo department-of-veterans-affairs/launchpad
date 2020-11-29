@@ -1,22 +1,23 @@
 import os
 import mimetypes
+from wsgiref.util import FileWrapper
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-from rocketship.forms import RecordForm
-from rocketship.models import Record
 from django.views import generic
 from django.urls import reverse
-from django.template import RequestContext
 from django.conf import settings
 from django.utils.encoding import smart_str
-from wsgiref.util import FileWrapper
+from django.contrib.auth.decorators import login_required
+
+from rocketship.models import Record
 
 
 def index(request):
     return HttpResponse('Hello world, you are at the rocketship index.')
 
 
+@login_required
 def files_list(request):
     test_dir = str(settings.BASE_DIR) + "/rocketship/test_data"
     return render(request,
@@ -26,6 +27,7 @@ def files_list(request):
     )
 
 
+@login_required
 def download(request, file_name):
     file_path = str(settings.BASE_DIR) + "/rocketship/test_data/" + file_name
     file_wrapper = FileWrapper(open(file_path,'rb'))
@@ -33,7 +35,7 @@ def download(request, file_name):
     response = HttpResponse(file_wrapper, content_type=file_mimetype)
     response['X-Sendfile'] = file_path
     response['Content-Length'] = os.stat(file_path).st_size
-    response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file_name) 
+    response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file_name)
     return response
 
 
