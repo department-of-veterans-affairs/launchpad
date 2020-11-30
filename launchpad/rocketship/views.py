@@ -13,11 +13,12 @@ from django.contrib.auth.decorators import login_required
 from rocketship.models import Record
 
 
+@login_required(login_url='/accounts/login/')
 def index(request):
     return HttpResponse('Hello world, you are at the rocketship index.')
 
 
-@login_required
+@login_required(login_url='/accounts/login/')
 def files_list(request):
     test_dir = str(settings.BASE_DIR) + "/rocketship/test_data"
     return render(request,
@@ -27,7 +28,7 @@ def files_list(request):
     )
 
 
-@login_required
+@login_required(login_url='/accounts/login/')
 def download(request, file_name):
     file_path = str(settings.BASE_DIR) + "/rocketship/test_data/" + file_name
     file_wrapper = FileWrapper(open(file_path,'rb'))

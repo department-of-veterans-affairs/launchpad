@@ -127,4 +127,4 @@ STATIC_URL = '/static/'
 # STATIC_ROOT = f'{os.environ["HOME"]}/launchpad/static'
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
-LOGIN_REDIRECT_URL = '/rocketship'
+LOGIN_REDIRECT_URL = '/rocketship/file_list/'
