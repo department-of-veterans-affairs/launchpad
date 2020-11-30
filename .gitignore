@@ -7,6 +7,6 @@ launchpad/static
 prod_setup.sh
 static
 *.csv
-launchpad_env/*
+launchpadenv/*
 __pycache__/
 *.py[cod]

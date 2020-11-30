@@ -2,11 +2,15 @@
 
 # Fetch data from genisis (once an hour) & load into postgres
 
+# Load env variables
+# Assumes they are in the script below
+WORKING_DIR="/home/ubuntu/launchpad/launchpad"
+
+source ${WORKING_DIR}/../../setup_prod.sh
+
 GENISIS_USERNAME=$GENISIS_USERNAME
 GENISIS_PASSWORD=$GENISIS_PASSWORD
 URL=$GENISIS_URL
-
-WORKING_DIR="."
 
 mkdir -p ${WORKING_DIR}"/data"
 
@@ -40,9 +44,9 @@ mv ${TMP_FILE} ${OUT_FILE}
 
 echo "Loading into postgres" >> ${LOG_FILE}
 source ${WORKING_DIR}/../launchpadenv/bin/activate
-python ${WORKING_DIR}/load_from_genisis.py ${OUT_FILE} >> ${LOG_FILE} 2>&1
+python ${WORKING_DIR}/load_from_genisis.py ${OUT_FILE} 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
-python ${WORKING_DIR}/check_num_records.py >> ${LOG_FILE}
+python ${WORKING_DIR}/check_num_records.py 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
 END_TIME=$(date)
 echo "Complete - yay! at: "${END_TIME} >> ${LOG_FILE}
