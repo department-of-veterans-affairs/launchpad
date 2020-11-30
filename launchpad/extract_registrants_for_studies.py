@@ -5,6 +5,7 @@ import os
 import sys
 import csv
 
+from datetime import date
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
@@ -74,10 +75,13 @@ def main(facility, outfile):
 if __name__ == '__main__':
     facility_list_fn = sys.argv[1]
     outfile_prefix = sys.argv[2]
+
+    today = date.today()
+    current_date = d4 = today.strftime("%Y_%m_%d")
     facilities = []
     with open(facility_list_fn) as fn:
         for line in fn:
             facilities.append(line.strip())
     for facility in facilities:
-        out_file = outfile_prefix + facility
+        out_file = outfile_prefix + "/" + current_date + "_" + facility
         main(facility, out_file)
