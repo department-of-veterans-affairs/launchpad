@@ -1,0 +1,5210 @@
+[
+    {
+        "FormSubmissionId": 46218,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:46:53Z",
+        "UpdatedDateTime": "2020-12-01T03:46:53Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "YES"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ZERO"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "dwHnJ"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "WtsuX"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "Mhgqjx"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "aJxidXoplhy@xlEXZ.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "6577133271"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "29212"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1986-02-19"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46219,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:47:00Z",
+        "UpdatedDateTime": "2020-12-01T03:47:00Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "cWT"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "M"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "FFMgelvu"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "HkGHzbNpcS@jOIaw.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "3344733540"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "98501"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1940-03-03"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46220,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:47:46Z",
+        "UpdatedDateTime": "2020-12-01T03:47:46Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ZERO"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "qqqMb"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "lxNXyCIH"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "lAsqAKzSXadlDF@lETE.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "7276159613"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "75225"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1993-12-01"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46221,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:47:55Z",
+        "UpdatedDateTime": "2020-12-01T03:47:55Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "DIAGNOSED_DETAILS::NASAL_SWAB_TEST_POSITIVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ELEVEN_THIRTY"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "EpzIxBRUe"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "Jgxmxkcf"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "DdHgIuhR@oZzeSws.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "9928965276"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "33614"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1989-09-09"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46222,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:48:55Z",
+        "UpdatedDateTime": "2020-12-01T03:48:55Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "UNSURE"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "HYj"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "izGMLsTgefsnx"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "ijFxHoYugUmb@kTOreUI.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "5941506813"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "80022"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1920-10-08"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46223,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:51:48Z",
+        "UpdatedDateTime": "2020-12-01T03:51:48Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "KuuMSRHg"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "NkvZkLkKj"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "Vxbe"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "hWimVeLF@qTahg.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "5757094279"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "73134"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1927-05-27"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46224,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:55:32Z",
+        "UpdatedDateTime": "2020-12-01T03:55:32Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ZERO"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "JlMs"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "iEHbN"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "nfJEibH"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "fkassing@sc.rr.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "8034665389"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "29223"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1943-06-10"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46225,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:55:51Z",
+        "UpdatedDateTime": "2020-12-01T03:55:51Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "RthOlI"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "T"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "DrrKdmFZ"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "kaDAGgYhVybQwXJ@cJjjW.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "9911021077"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "30337"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "2000-04-16"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46226,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:58:13Z",
+        "UpdatedDateTime": "2020-12-01T03:58:13Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "UNSURE"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ELEVEN_THIRTY"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "ovGXGnMs"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "jsmYTZa"
+            },
+            {
+                "QuestionName": "suffix",
+                "QuestionValue": "Jr."
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "DyDJtQEdek@jkaNs.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "5555223449"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "70114"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1977-10-16"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46227,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T03:58:44Z",
+        "UpdatedDateTime": "2020-12-01T03:58:44Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "aZooKO"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "AxCld"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "hwpcJmgL@VVulG.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "9466276411"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "85032"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1970-08-02"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46228,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:00:39Z",
+        "UpdatedDateTime": "2020-12-01T04:00:39Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "UNSURE"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ELEVEN_THIRTY"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "pvDmSF"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "YCzI"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "woXNyBD"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "eagle7055@sc.rr.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "8034665599"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "29223"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1967-06-06"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46229,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:01:19Z",
+        "UpdatedDateTime": "2020-12-01T04:01:19Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "DIAGNOSED_DETAILS::SYMPTOMS_ONLY",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "DIAGNOSED_DETAILS::NASAL_SWAB_TEST_POSITIVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "MORE_THAN_FIFTY"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "Vpzrp"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "buOhClqB"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "wtIZ"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "UVujlBFrzprVZGdg@gOdeLmDTQ.net"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "7766422000"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "29621"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1932-07-26"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46230,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:03:47Z",
+        "UpdatedDateTime": "2020-12-01T04:03:47Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "QAxUjV"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "egnAW"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "LswkuTEp"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "UiUTebRSkT@HoVVV.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "0775688673"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "32608"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1946-11-13"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46231,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:04:37Z",
+        "UpdatedDateTime": "2020-12-01T04:04:37Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ZERO"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "wHaEefR"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "ORFKCA"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "jdxilaU"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "gUelBzInSkEj@lNn.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "6243427728"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "49503"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1943-09-27"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46232,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:06:01Z",
+        "UpdatedDateTime": "2020-12-01T04:06:01Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "UNSURE"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "XjxQ"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "LJCPL"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "ronsonic@tampabay.rr.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "8138174725"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "33604"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1955-09-24"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46233,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:07:15Z",
+        "UpdatedDateTime": "2020-12-01T04:07:15Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "LhFD"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "lmpihXx"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "nwzTywP"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "jkassing@sc.rr.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "8037365972"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "29223"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1941-12-22"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46234,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:07:42Z",
+        "UpdatedDateTime": "2020-12-01T04:07:42Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "DIAGNOSED_DETAILS::NASAL_SWAB_TEST_POSITIVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "THREE_FIVE"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "jrpkcy"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "JAkNHv"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "ZriyrqJDKAIOVj@kYSiEy.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "7445496169"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "70131"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1945-03-14"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46235,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:07:52Z",
+        "UpdatedDateTime": "2020-12-01T04:07:52Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "lWId"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "JNFpvnEfz"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "lSQROfusUIbHC@cAwRZ.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "6687397846"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "85028"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1939-09-01"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46236,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:08:49Z",
+        "UpdatedDateTime": "2020-12-01T04:08:49Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "UNSURE"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "NbeVtQZhQ"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "r"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "UrknWf"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "ydHMUrwtIfbnEQXm@VqTv.gov"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "9491730599"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "87120"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1985-01-17"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    },
+    {
+        "FormSubmissionId": 46237,
+        "GenISISId": 1,
+        "StudyId": 1,
+        "FormName": "COVID-19",
+        "FormVersion": "1.0",
+        "FormSource": "VA",
+        "CreatedDateTime": "2020-12-01T04:09:54Z",
+        "UpdatedDateTime": "2020-12-01T04:09:54Z",
+        "FormQuestions": [
+            {
+                "QuestionName": "diagnosed",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "closeContactPositive",
+                "QuestionValue": "NO"
+            },
+            {
+                "QuestionName": "hospitalized",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "smokeOrVape",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ALLERGY_VACCINE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::AUTOIMMUNE_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::CANCER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::IMMUNOCOMPROMISED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::DIABETES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HEART_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::HIGH_BLOOD_PRESSURE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::KIDNEY_LIVER_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::LUNG_DISEASE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::STROKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::ANOTHER_SERIOUS_CHRONIC_ILLNESS",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "HEALTH_HISTORY::NONE_OF_ABOVE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::EMPLOYED_OUTSIDE_OF_HOME",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FRONTLINE_WORKER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::FURLOUGHED_UNEMPLOYED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::RETIRED",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::STUDENT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "EMPLOYMENT_STATUS::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CAR",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::CARPOOL_OR_VANPOOL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::FREQUENT_AIR_TRAVEL",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::PUBLIC_TRANSPORT",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WALK_BIKE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::WORK_FROM_HOME",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "TRANSPORTATION::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "residentsInHome",
+                "QuestionValue": "ONE_TWO"
+            },
+            {
+                "QuestionName": "closeContact",
+                "QuestionValue": "ONE_TEN"
+            },
+            {
+                "QuestionName": "firstName",
+                "QuestionValue": "qydgbiGs"
+            },
+            {
+                "QuestionName": "middle",
+                "QuestionValue": "H"
+            },
+            {
+                "QuestionName": "lastName",
+                "QuestionValue": "hqCPVTbI"
+            },
+            {
+                "QuestionName": "email",
+                "QuestionValue": "gGkDUqXg@BkXhx.com"
+            },
+            {
+                "QuestionName": "phone",
+                "QuestionValue": "1333434219"
+            },
+            {
+                "QuestionName": "zipCode",
+                "QuestionValue": "32765-7119"
+            },
+            {
+                "QuestionName": "veteranDateOfBirth",
+                "QuestionValue": "1968-11-28"
+            },
+            {
+                "QuestionName": "VETERAN::VETERAN",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "VETERAN::ACTIVE_DUTY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NATIONAL_GUARD_RESERVES",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_EMPLOYEE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::FAMILY_MEMBER_CAREGIVER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::VA_HEALTHCARE_CHAMPVA",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "VETERAN::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::FEMALE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_MALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::TRANSGENDER_FEMALE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NON_BINARY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::SELF_IDENTIFY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "GENDER::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::AMERICAN_INDIAN_ALASKA_NATIVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::ASIAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::BLACK_AFRICAN_AMERICAN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HISPANIC_LATINO_SPANISH_ORIGIN",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::HAWAIIAN_PACIFIC_ISLANDER",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::WHITE",
+                "QuestionValue": "Yes"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::OTHER_RACE_ETHNICITY",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "RACE_ETHNICITY::NONE_OF_ABOVE",
+                "QuestionValue": "No"
+            },
+            {
+                "QuestionName": "consentAgreementAccepted",
+                "QuestionValue": "Yes"
+            }
+        ],
+        "FormFileName": null
+    }
+]
