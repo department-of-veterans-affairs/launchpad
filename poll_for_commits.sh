@@ -12,9 +12,6 @@ do
 
 echo "Checking for changes..."
 
-#move into your git repo where your jekyll site is
-cd ~/launchpad;
-
 git fetch;
 LOCAL=$(git rev-parse HEAD);
 REMOTE=$(git rev-parse @{u});
@@ -24,7 +21,7 @@ echo "Comparing ${LOCAL} vs. ${REMOTE}..."
 #if our local revision id doesn't match the remote, we will need to pull the changes
 if [ $LOCAL != $REMOTE ]; then
 
-    echo "Changes found! Pulling..." >> poll.log
+    echo "Changes found! Pulling..."
     #pull and merge changes
     git pull origin master;
 
