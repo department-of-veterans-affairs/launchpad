@@ -32,6 +32,10 @@ if [ $LOCAL != $REMOTE ]; then
     pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org \
     -r requirements.txt;
 
+    # make and run any necessary database migrations
+    python3 launchpad/manage.py makemigrations
+    python3 launchpad/manage.py migrate
+
     # restart apache
     sudo systemctl reload apache2;
 

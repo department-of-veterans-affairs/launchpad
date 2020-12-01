@@ -10,3 +10,4 @@ static
 launchpadenv/*
 __pycache__/
 *.py[cod]
+load_secrets.sh
