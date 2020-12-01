@@ -21,8 +21,19 @@ def create_unique_id(form_questions, created_datetime):
     import hashlib
     import json
     import dateutil.parser
+    for i in form_questions:
+        if i['QuestionName'] == 'firstName':
+            firstName = i['QuestionValue']
+        elif i['QuestionName'] == 'lastName':
+            lastName = i['QuestionValue']
+        elif i['QuestionName'] == 'email':
+            email = i['QuestionValue']
+        else:
+            continue 
     hash_maker = hashlib.md5()
-    hash_material = json.dumps(form_questions).encode()
+    hash_string = firstName + lastName + email
+    hash_material = hash_string.encode()
+    #hash_material = json.dumps(form_questions).encode()
     hash_maker.update(hash_material)
     hash_out = hash_maker.hexdigest()
     hash_as_int = int(hash_out, 16)

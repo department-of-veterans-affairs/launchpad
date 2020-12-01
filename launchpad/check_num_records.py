@@ -1,17 +1,24 @@
 import os
+import json
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
-from rocketship.models import RegistrantData
+from django.db.models import Count, Case, When, Value
+from rocketship.models import RaceEthnicity, RegistrantData
+
+fname = "data/genisis_data.json"
+with open(fname) as infile:
+    genisis_data = json.loads(infile.read())
+
+
+num_genisis_records = len(genisis_data)
+print(f"Total num records in genisis json: {num_genisis_records}")
 
 all_records = RegistrantData.objects.all()
 num_records = len(all_records)
-print(f"Total num records: {num_records}")
-
-from django.db.models import Count, Case, When, Value
-from rocketship.models import RaceEthnicity
+print(f"Total num records in postgres: {num_records}")
 
 diversity_records = RaceEthnicity.objects.all()
 
