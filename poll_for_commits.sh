@@ -25,16 +25,8 @@ if [ $LOCAL != $REMOTE ]; then
     #pull and merge changes
     git pull origin master;
 
-    # activate python virtual environment
-    source ../launchpadenv/bin/activate;
-
-    # install python dependenices
-    pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org \
-    -r requirements.txt;
-
-    # make and run any necessary database migrations
-    python3 launchpad/manage.py makemigrations
-    python3 launchpad/manage.py migrate
+    # run existing setup script
+    bash ./setup.sh;
 
     # restart apache
     sudo systemctl reload apache2;
