@@ -1,83 +1,84 @@
 """ Output new list of registrants for each site """
 
-
 import os
-
+from collections import OrderedDict
+import datetime as dt
 from datetime import date
 import argparse
 import django
+import pandas as pd
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
-from rocketship.models import RegistrantData
+from rocketship.models import Facility, Record
 from rocketship.config import study_sites
+from rocketship.utilities.serializers import RecordSerializer
 
 
-MAX_DIST_TO_VA = 100 #In miles
+listOrder = ['submissionId', 'registryStatus', 'createdDateTime', 'firstName', 'middle', 'lastName',
+    'suffix', 'phone', 'email', 'zipCode', 'veteranDateOfBirth', 'GENDER', 'GENDER_SELF_IDENTIFY_DETAILS',
+    'RACE_ETHNICITY', 'VETERAN', 'diagnosed', 'closeContactPositive', 'hospitalized', 'smokeOrVape',
+    'HEALTH_HISTORY', 'EMPLOYMENT_STATUS', 'TRANSPORTATION', 'residentsInHome', 'closeContact',
+    'consentAgreementAccepted', 'timezone', 'state', 'age']
 
-def serialize_records(records):
-    output = []
-    for record in records:
-        serialized = {
-            'submissionId': record['submissionId'],
-            'registryStatus': record['registryStatus'],
-            'createdDateTime': record['createdDateTime']
-        }
-        for data_type in ['registrantData', 'calculatedData', 'iCData',
-                          'studyTeamData']:
-            for key in record[data_type]:
-                if type(record[data_type][key]) == list:
-                    value = ', '.join(
-                                    [f'*{record}*' for record in
-                                        record[data_type][key]])
-                    serialized[key] = value
-                elif key == 'zipCode':
-                    if record[data_type][key][-1] != '-':
-                        value = f'{record[data_type][key]}-'
-                    else:
-                        value = f'{record[data_type][key]}'
-                    serialized[key] = value
-                else:
-                    serialized[key] = record[data_type][key]
-        output.append(serialized)
-    return output
+complicated_things = ['GENDER', 'RACE_ETHNICITY', 'VETERAN', "HEALTH_HISTORY"]
+
+initialList = ['submissionId', 'registryStatus', 'createdDateTime']
+
+regList = ['firstName', 'middle', 'lastName',
+    'suffix', 'phone', 'email', 'zipCode', 'veteranDateOfBirth', 'GENDER', 'GENDER_SELF_IDENTIFY_DETAILS',
+    'RACE_ETHNICITY', 'VETERAN', 'diagnosed', 'closeContactPositive', 'hospitalized', 'smokeOrVape',
+    'HEALTH_HISTORY', 'EMPLOYMENT_STATUS', 'TRANSPORTATION', 'residentsInHome', 'closeContact',
+    'consentAgreementAccepted', 'timezone', 'state', 'age']
 
 
-def is_relevant_record(record, facility, max_dist):
-    """ All requirements to apply here """
-    distance_to_va = record.distance_to_vha(vha_code=facility)
-    if distance_to_va is None:
-        print("Problem getting distance to va")
-        return False
-    if distance_to_va <= max_dist and record.registryStatus == 'IN':
-        return True
-    else:
-        return False
+def convert_to_string(my_dict):
+    true_keys = [key for key,value in my_dict.items() if value == True]
+    output_str = ', '.join([f'*{record}*' for record in true_keys])
+    return output_str
+
+
+def create_row(record):
+    serialized_record = RecordSerializer(record)
+    serialized_record_dict = dict(serialized_record.data)
+    final_dict = OrderedDict()
+    for item in initialList:
+        final_dict[item] = serialized_record_dict[item]
+    for item in regList:
+        if item in complicated_things:
+            str_value = convert_to_string(serialized_record_dict['registrantData'][item])
+            final_dict[item] = str_value
+        else:
+            final_dict[item] = serialized_record_dict['registrantData'][item]
+    return final_dict
 
 
 def main(facility, outfile, updateStatus=None):
 
-    records_to_output = []
+    # Get all records within 100 miles of facility
+    facility_obj = Facility.objects.get(facility_id=facility)
+    relevant_records = Record.objects.filter(registrantData__facilities_w_in_100_mi_in=[facility_obj],
+        registryStatus='IN')
 
-    all_records = RegistrantData.objects.all()
+    if len(relevant_records) == 0:
+        print(f"No relevant records for {facility}")
+        return None
 
-    for record in all_records:
-        if is_relevant_record(record, facility, MAX_DIST_TO_VA):
-            records_to_output.append(record)
-            if updateStatus != None:
-                record.registryStatus = updateStatus
-                record.save(update_fields=['registryStatus'])
+    relevant_record_list = []
+    for rec in relevant_records:
+        new_rec = create_row(rec)
+        relevant_record_list.append(new_rec)
+        if updateStatus != None:
+            rec.registryStatus = updateStatus
+            today = date.today()
+            rec.recordLastModifiedDateTime = dt.datetime.strptime(today, '%Y-%m-%dT%H:%M:%SZ')
+            rec.save(update_fields=['registryStatus', 'recordLastModifiedDateTime'])
 
-    num_records = len(records_to_output)
-    print(f'Total number records to output {num_records}')
-
-    output = serialize_records(records_to_output)
-
-    file = open(outfile, 'w', newline='')
-    file.write('submissionId,registryStatus,createdDateTime,firstName,middle,lastName,suffix,phone,email,zipCode,veteranDateOfBirth,GENDER,GENDER_SELF_IDENTIFY_DETAILS,RACE_ETHNICITY,VETERAN,diagnosed,closeContactPositive,hospitalized,smokeOrVape,HEALTH_HISTORY,EMPLOYMENT_STATUS,TRANSPORTATION,residentsInHome,closeContact,consentAgreementAccepted,timezone,state,age,iCRepresentativeName,iCLatestCallDate,iCoptOut,iCCallBackNeeded,iCCallBackDate,iCCallBackTime,iCReceivedOtherC19Vaccine,iCComments,iCLastModifiedDate,iCInUseBy,iCReadyforStudyTeam,studyTeamOptOut,studyTeamEligibilityOutcome,studyTeamEnrollmentStatus,studyTeamComments,studyTeamName\n')
-    for line in output:
-        file.write(line + '\n')
+    relevant_df = pd.DataFrame.from_records(relevant_record_list)
+    pd.to_csv(outfile, relevant_df, index=False)
+    print(relevant_df.describe(include='all'))
+    return facility
 
 
 if __name__ == '__main__':
@@ -90,6 +91,9 @@ if __name__ == '__main__':
 
     today = date.today()
     current_date = today.strftime("%Y_%m_%d_%H_%M")
+    successful_sites = []
     for facility in study_sites:
-        outfile = args.outfile_prefix + "/" + current_date + "_" + facility
-        main(facility, outfile, args.updateStatus)
+        outfile = args.outfile_prefix + "/" + current_date + "_" + facility + ".csv"
+        successful = main(facility, outfile, args.updateStatus)
+        successful_sites.append(successful)
+    print(f"Successful sites: {successful_sites}")

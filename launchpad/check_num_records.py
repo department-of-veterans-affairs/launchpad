@@ -8,7 +8,7 @@ django.setup()
 from django.db.models import Count, Case, When, Value
 from rocketship.models import RaceEthnicity, RegistrantData
 
-fname = "data/genisis_data.json"
+fname = "/home/ubuntu/launchpad/launchpad/data/genisis_data.json"
 with open(fname) as infile:
     genisis_data = json.loads(infile.read())
 
