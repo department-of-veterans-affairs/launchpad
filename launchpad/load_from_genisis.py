@@ -26,7 +26,7 @@ def create_unique_id(form_questions, created_datetime):
             firstName = i['QuestionValue']
         elif i['QuestionName'] == 'lastName':
             lastName = i['QuestionValue']
-        elif i['QuestionName'] == email:
+        elif i['QuestionName'] == 'email':
             email = i['QuestionValue']
     hash_material_str = firstName + lastName + email
     hash_material = hash_material_str.encode()

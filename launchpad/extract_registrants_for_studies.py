@@ -3,7 +3,6 @@
 import os
 from collections import OrderedDict
 import datetime as dt
-from datetime import date
 import argparse
 import django
 import pandas as pd
@@ -73,7 +72,7 @@ def main(facility, outfile, updateStatus=None):
         relevant_record_list.append(new_rec)
         if updateStatus is not None:
             rec.registryStatus = updateStatus
-            today = date.today()
+            today = dt.datetime.now()
             current_date = today.strftime('%Y-%m-%dT%H:%M:%SZ')
             rec.recordLastModifiedDateTime = dt.datetime.strptime(current_date, '%Y-%m-%dT%H:%M:%SZ')
             rec.save(update_fields=['registryStatus', 'recordLastModifiedDateTime'])
