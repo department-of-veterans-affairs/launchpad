@@ -6,24 +6,6 @@ from rocketship.models import Gender, RaceEthnicity, Veteran, HealthHistory, \
 EmploymentStatus, Transportation, Record, RegistrantData
 
 
-
-class RecordSerializer(serializers.ModelSerializer):
-    registrantData = RegistrantSerializer(many=False, read_only=True)
-    class Meta:
-        model = Record
-        fields = [field.name for field in Record._meta.get_fields() if field.name not in ['id']] 
-
-class RegistrantSerializer(serializers.ModelSerializer):
-    GENDER = GenderSerializer(many=False, read_only=True)
-    RACE_ETHNICITY = EthnicitySerializer(many=False, read_only=True)
-    VETERAN = VeteranSerializer(many=False, read_only=True)
-    HEALTH_HISTORY = HealthHistorySerializer(many=False, read_only=True)
-    EMPLOYMENT_STATUS = EmploymentStatusSerializer(many=False, read_only=True)
-    TRANSPORTATION = TransportationSerializer(many=False, read_only=True)
-    class Meta:
-        model = RegistrantData
-        fields = [field.name for field in RegistrantData._meta.get_fields() if field.name not in ['record', 'id', 'formData', 'facilities_w_in_100_mi']] + ['age', 'state', 'timezone']
-
 class GenderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Gender
@@ -53,3 +35,20 @@ class TransportationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transportation
         fields = [field.name for field in Transportation._meta.get_fields() if field.name not in ['registrantdata', 'id']]
+
+class RegistrantSerializer(serializers.ModelSerializer):
+    GENDER = GenderSerializer(many=False, read_only=True)
+    RACE_ETHNICITY = EthnicitySerializer(many=False, read_only=True)
+    VETERAN = VeteranSerializer(many=False, read_only=True)
+    HEALTH_HISTORY = HealthHistorySerializer(many=False, read_only=True)
+    EMPLOYMENT_STATUS = EmploymentStatusSerializer(many=False, read_only=True)
+    TRANSPORTATION = TransportationSerializer(many=False, read_only=True)
+    class Meta:
+        model = RegistrantData
+        fields = [field.name for field in RegistrantData._meta.get_fields() if field.name not in ['record', 'id', 'formData', 'facilities_w_in_100_mi']] + ['age', 'state', 'timezone']
+
+class RecordSerializer(serializers.ModelSerializer):
+    registrantData = RegistrantSerializer(many=False, read_only=True)
+    class Meta:
+        model = Record
+        fields = [field.name for field in Record._meta.get_fields() if field.name not in ['id']] 

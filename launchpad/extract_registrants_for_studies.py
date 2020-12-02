@@ -11,6 +11,8 @@ import pandas as pd
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
+pd.set_option('display.max_columns', 500)
+
 from rocketship.models import Facility, Record
 from rocketship.config import study_sites
 from rocketship.utilities.serializers import RecordSerializer
@@ -22,7 +24,7 @@ listOrder = ['submissionId', 'registryStatus', 'createdDateTime', 'firstName', '
     'HEALTH_HISTORY', 'EMPLOYMENT_STATUS', 'TRANSPORTATION', 'residentsInHome', 'closeContact',
     'consentAgreementAccepted', 'timezone', 'state', 'age']
 
-complicated_things = ['GENDER', 'RACE_ETHNICITY', 'VETERAN', "HEALTH_HISTORY"]
+complicated_things = ['GENDER', 'RACE_ETHNICITY', 'VETERAN', "HEALTH_HISTORY", "EMPLOYMENT_STATUS", "TRANSPORTATION"]
 
 initialList = ['submissionId', 'registryStatus', 'createdDateTime']
 
@@ -58,12 +60,12 @@ def main(facility, outfile, updateStatus=None):
 
     # Get all records within 100 miles of facility
     facility_obj = Facility.objects.get(facility_id=facility)
-    relevant_records = Record.objects.filter(registrantData__facilities_w_in_100_mi_in=[facility_obj],
+    relevant_records = Record.objects.filter(registrantData__facilities_w_in_100_mi__in=[facility_obj],
         registryStatus='IN')
 
     if len(relevant_records) == 0:
         print(f"No relevant records for {facility}")
-        return None
+        return f"{facility} failed"
 
     relevant_record_list = []
     for rec in relevant_records:
@@ -72,20 +74,21 @@ def main(facility, outfile, updateStatus=None):
         if updateStatus != None:
             rec.registryStatus = updateStatus
             today = date.today()
-            rec.recordLastModifiedDateTime = dt.datetime.strptime(today, '%Y-%m-%dT%H:%M:%SZ')
+            current_date = today.strftime('%Y-%m-%dT%H:%M:%SZ')
+            rec.recordLastModifiedDateTime = dt.datetime.strptime(current_date, '%Y-%m-%dT%H:%M:%SZ')
             rec.save(update_fields=['registryStatus', 'recordLastModifiedDateTime'])
 
     relevant_df = pd.DataFrame.from_records(relevant_record_list)
-    pd.to_csv(outfile, relevant_df, index=False)
+    relevant_df.to_csv(outfile, index=False, na_rep='')
     print(relevant_df.describe(include='all'))
-    return facility
+    return f"{facility} success"
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Output study lists.')
     parser.add_argument('--outfile_prefix', help='Outfile prefix',
         required=True)
-    parser.add_argument('--updateStatus', choices=['IC', 'ST'],
+    parser.add_argument('--update_status', choices=['IC', 'ST'],
         help='What to update the status to. Not passing argument means no updating')
     args = parser.parse_args()
 
@@ -93,7 +96,7 @@ if __name__ == '__main__':
     current_date = today.strftime("%Y_%m_%d_%H_%M")
     successful_sites = []
     for facility in study_sites:
-        outfile = args.outfile_prefix + "/" + current_date + "_" + facility + ".csv"
-        successful = main(facility, outfile, args.updateStatus)
+        outfile = args.outfile_prefix + "/" + facility + "_" + current_date + ".csv"
+        successful = main(facility, outfile, args.update_status)
         successful_sites.append(successful)
-    print(f"Successful sites: {successful_sites}")
+    print(f"Completion Status: {successful_sites}")

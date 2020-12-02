@@ -2,14 +2,13 @@ import sys
 import os
 import datetime as dt
 import json
+import argparse
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
-
-import datetime as dt
-import json
+from collections import OrderedDict
 from rocketship.models import RegistrantData, iCData, studyTeamData, \
                             Record, HealthHistory, Gender, RaceEthnicity, \
                             Transportation, EmploymentStatus, Veteran
@@ -21,19 +20,17 @@ def create_unique_id(form_questions, created_datetime):
     import hashlib
     import json
     import dateutil.parser
-    for i in form_questions:
-        if i['QuestionName'] == 'firstName':
-            firstName = i['QuestionValue']
-        elif i['QuestionName'] == 'lastName':
-            lastName = i['QuestionValue']
-        elif i['QuestionName'] == 'email':
-            email = i['QuestionValue']
-        else:
-            continue 
     hash_maker = hashlib.md5()
-    hash_string = firstName + lastName + email
-    hash_material = hash_string.encode()
     #hash_material = json.dumps(form_questions).encode()
+    
+    for i in form_questions:
+        if i['Question_Name'] == firstName:
+            firstName = i['Question_Value']
+        elif i['Question_Name'] == lastName:
+            lastName = i['Question_Value']
+        elif i['Question_Name'] == email:
+            email = i['Question_Value']
+    hash_material = firstName + lastName + email
     hash_maker.update(hash_material)
     hash_out = hash_maker.hexdigest()
     hash_as_int = int(hash_out, 16)
@@ -67,7 +64,7 @@ def create_registrant_data(form_question_list):
     return consolidated
 
 
-def main(fname):
+def main(fname, map_facilities=False):
     with open(fname) as infile:
         genisis_data = json.loads(infile.read())
     pks = []
@@ -149,6 +146,9 @@ def main(fname):
                     submission['CreatedDateTime'], '%Y-%m-%dT%H:%M:%SZ')
                 )
             record_obj.save()
+            if map_facilities:
+                record_to_update = Record.objects.get(submissionId=submissionId)
+                map_records_to_facilities_function(record)
         except IntegrityError:
             # Skip if submission already exists to prevent data being overwritten.
             pass
@@ -157,5 +157,10 @@ def main(fname):
 
 
 if __name__ == '__main__':
-    genisis_fname = sys.argv[1] # Should be the fn to read in
-    main(fname=genisis_fname)
+    parser = argparse.ArgumentParser(description='Load genisis json.')
+    parser.add_argument('--genisis_fname', help='Outfile prefix',
+        required=True)
+    parser.add_argument('--map_facilities', action='store_true',
+        help='If included, will store facilities within 100 miles')
+    args = parser.parse_args()
+    main(fname=args.genisis_fname, map_facilities=args.map_facilities)
