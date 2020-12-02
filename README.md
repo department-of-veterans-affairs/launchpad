@@ -17,6 +17,8 @@
 * Load facilities database:
     * curl command:  curl -X GET 'https://sandbox-api.va.gov/services/va_facilities/v0/facilities/all' --header 'apikey:... >
     * python load_facilities.py
+* Make sure registry status is current
+    * i.e. load_registry_status.py
 * Load genisis db:
     * ./fetch_data_from_genisis.sh
 * Extract relevant registrants for study sites:
