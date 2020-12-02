@@ -51,7 +51,10 @@ def create_row(record):
             str_value = convert_to_string(serialized_record_dict['registrantData'][item])
             final_dict[item] = str_value
         else:
-            final_dict[item] = serialized_record_dict['registrantData'][item]
+            if item == 'zipCode':
+                final_dict[item] = serialized_record_dict['registrantData'][item] + "-"
+            else:
+                final_dict[item] = serialized_record_dict['registrantData'][item]
     return final_dict
 
 
@@ -79,7 +82,9 @@ def main(facility, outfile, updateStatus=None):
 
     relevant_df = pd.DataFrame.from_records(relevant_record_list)
     relevant_df.to_csv(outfile, index=False, na_rep='')
-    print(relevant_df.describe(include='all'))
+    log_desc = relevant_df.describe(include='all').transpose()
+    out_log = outfile + ".log"
+    log_desc.to_csv(out_log)
     return f"{facility} success"
 
 
@@ -91,11 +96,14 @@ if __name__ == '__main__':
         help='What to update the status to. Not passing argument means no updating')
     args = parser.parse_args()
 
-    today = date.today()
+    today = dt.datetime.now()
     current_date = today.strftime("%Y_%m_%d_%H_%M")
     successful_sites = []
     for facility in study_sites:
-        outfile = args.outfile_prefix + "/" + facility + "_" + current_date + ".csv"
+        outdir = args.outfile_prefix + "/" + facility
+        if not os.path.exists(outdir):
+            os.makedirs(outdir)
+        outfile = outdir + "/" + facility + "_" + current_date + ".csv"
         successful = main(facility, outfile, args.update_status)
         successful_sites.append(successful)
     print(f"Completion Status: {successful_sites}")

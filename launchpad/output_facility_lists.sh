@@ -12,7 +12,7 @@ mkdir -p ${WORKING_DIR}"/data/for_study_sites"
 source ${WORKING_DIR}/../launchpadenv/bin/activate
 
 python ${WORKING_DIR}/extract_registrants_for_studies.py \
---output_prefix ${WORKING_DIR}"/data/for_study_sites" \
+--outfile_prefix ${WORKING_DIR}"/data/for_study_sites" \
  2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
 END_TIME=$(date)
