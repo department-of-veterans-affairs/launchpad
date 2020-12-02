@@ -1,4 +1,3 @@
-import sys
 import os
 import datetime as dt
 import json
@@ -8,29 +7,29 @@ import django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
-from collections import OrderedDict
 from rocketship.models import RegistrantData, iCData, studyTeamData, \
                             Record, HealthHistory, Gender, RaceEthnicity, \
                             Transportation, EmploymentStatus, Veteran
 from django.db.utils import IntegrityError
+from map_records_to_facilities import map_records_to_facilities_function
 
 
 def create_unique_id(form_questions, created_datetime):
     # Django shell requiring these to be imported within the function (!)
     import hashlib
-    import json
     import dateutil.parser
     hash_maker = hashlib.md5()
     #hash_material = json.dumps(form_questions).encode()
-    
+
     for i in form_questions:
-        if i['Question_Name'] == firstName:
-            firstName = i['Question_Value']
-        elif i['Question_Name'] == lastName:
-            lastName = i['Question_Value']
-        elif i['Question_Name'] == email:
-            email = i['Question_Value']
-    hash_material = firstName + lastName + email
+        if i['QuestionName'] == 'firstName':
+            firstName = i['QuestionValue']
+        elif i['QuestionName'] == 'lastName':
+            lastName = i['QuestionValue']
+        elif i['QuestionName'] == email:
+            email = i['QuestionValue']
+    hash_material_str = firstName + lastName + email
+    hash_material = hash_material_str.encode()
     hash_maker.update(hash_material)
     hash_out = hash_maker.hexdigest()
     hash_as_int = int(hash_out, 16)
@@ -147,11 +146,11 @@ def main(fname, map_facilities=False):
                 )
             record_obj.save()
             if map_facilities:
-                record_to_update = Record.objects.get(submissionId=submissionId)
-                map_records_to_facilities_function(record)
+                record_to_update = Record.objects.get(submissionId=submission_id)
+                map_records_to_facilities_function(record_to_update)
         except IntegrityError:
             # Skip if submission already exists to prevent data being overwritten.
-            pass
+            print('IntegrityError')
         pks.append(record_obj.pk)
     return pks
 

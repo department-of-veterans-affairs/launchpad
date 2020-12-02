@@ -71,7 +71,7 @@ def main(facility, outfile, updateStatus=None):
     for rec in relevant_records:
         new_rec = create_row(rec)
         relevant_record_list.append(new_rec)
-        if updateStatus != None:
+        if updateStatus is not None:
             rec.registryStatus = updateStatus
             today = date.today()
             current_date = today.strftime('%Y-%m-%dT%H:%M:%SZ')

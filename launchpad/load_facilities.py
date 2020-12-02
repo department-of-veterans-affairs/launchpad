@@ -9,7 +9,7 @@ django.setup()
 from rocketship.models import Facility
 
 # Get this fron curl -X GET 'https://sandbox-api.va.gov/services/va_facilities/v0/facilities/all' --header 'apikey:...
-fname = 'all_facilities.json'
+fname = '/home/ubuntu/launchpad/launchpad/data/all_facilities.json'
 
 with open(fname) as infile:
     facilities = json.loads(infile.read())['features']

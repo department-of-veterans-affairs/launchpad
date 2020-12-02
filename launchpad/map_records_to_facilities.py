@@ -1,6 +1,9 @@
+""" Populates the facilities_w_in_100_mi portion of the record
+    which can be used in the future for faster extraction of relevant
+    participants
+"""
 
 import os
-import argparse
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
@@ -11,7 +14,6 @@ from rocketship.config import study_sites
 
 
 def map_records_to_facilities_function(record):
-    ct -= 1
     for site_code in study_sites:
         dist = record.registrantData.distance_to_vha(site_code)
         if not dist:
@@ -25,11 +27,10 @@ def map_records_to_facilities_function(record):
                             facility_obj)
             record.save()
         except Facility.DoesNotExist:
-            pass
-            # Log this.
+            print(f"Facility missing: {site_code}")
+
 
 def main():
-    ct = Record.objects.count()
     for record in Record.objects.all():
         map_records_to_facilities_function(record)
 

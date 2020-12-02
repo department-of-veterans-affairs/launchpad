@@ -44,7 +44,9 @@ mv ${TMP_FILE} ${OUT_FILE}
 
 echo "Loading into postgres" >> ${LOG_FILE}
 source ${WORKING_DIR}/../launchpadenv/bin/activate
-python ${WORKING_DIR}/load_from_genisis.py ${OUT_FILE} 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
+python ${WORKING_DIR}/load_from_genisis.py \
+--genisis_fname ${OUT_FILE} \
+--map_facilities 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
 python ${WORKING_DIR}/check_num_records.py 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
