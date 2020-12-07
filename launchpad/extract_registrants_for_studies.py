@@ -58,12 +58,39 @@ def create_row(record):
     return final_dict
 
 
+def output_stats(df, outfile)
+    out_log = outfile + ".log"
+
+    log_desc = df.describe(include='all').transpose()
+    log_desc.to_csv(out_log, mode="w")
+
+    gender_df = df["GENDER"].value_counts().reset_index()
+    gender_df["GENDER_PERCENT"] = gender_df["GENDER"] / gender_df["GENDER"].sum()
+    gender_df.to_csv(out_log, index=False, mode="a")
+
+    ethnicity_df = df["RACE_ETHNICITY"].value_counts().reset_index()
+    ethnicity_df["RACE_ETHNICITY_PERCENT"] = ethnicity_df["RACE_ETHNICITY"] / ethnicity_df["RACE_ETHNICITY"].sum()
+    ethnicity_df.to_csv(out_log, index=False, mode="a")
+
+    veteran_df = df["VETERAN"].value_counts().reset_index()
+    veteran_df["VETERAN_PERCENT"] = veteran_df["VETERAN"] / veteran_df["VETERAN"].sum()
+    veteran_df.to_csv(out_log, index=False, mode="a")
+
+
+
+
 def main(facility, outfile, updateStatus=None):
 
     # Get all records within 100 miles of facility
     facility_obj = Facility.objects.get(facility_id=facility)
-    relevant_records = Record.objects.filter(registrantData__facilities_w_in_100_mi__in=[facility_obj],
-        registryStatus='IN')
+    relevant_records = Record.objects.filter(
+        registrantData__facilities_w_in_100_mi__in=[facility_obj],
+        registryStatus='IN'
+        ).exclude(
+        registrantData__icData__iCOptOut=True
+        ).exclude(
+        registrantData__studyTeamData__studyTeamOptOut="True"
+        )
 
     if len(relevant_records) == 0:
         print(f"No relevant records for {facility}")
@@ -82,9 +109,9 @@ def main(facility, outfile, updateStatus=None):
 
     relevant_df = pd.DataFrame.from_records(relevant_record_list)
     relevant_df.to_csv(outfile, index=False, na_rep='')
-    log_desc = relevant_df.describe(include='all').transpose()
-    out_log = outfile + ".log"
-    log_desc.to_csv(out_log)
+
+    output_stats(relevant_df, outfile)
+
     return f"{facility} success"
 
 

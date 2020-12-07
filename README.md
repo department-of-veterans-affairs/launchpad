@@ -19,6 +19,8 @@
     * python load_facilities.py
 * Make sure registry status is current
     * i.e. load_registry_status.py
+* Make sure relevant people are opted out
+    * i.e. opt_out_registrants.py
 * Load genisis db:
     * ./fetch_data_from_genisis.sh
 * Extract relevant registrants for study sites:
