@@ -25,7 +25,7 @@ def main():
             line_clean = line.strip().split(',')
             if line[0] == 'Last Name':
                 continue
-            emails_phones.append(line_clean[2], line_clean[3])
+            emails_phones.append([line_clean[2], line_clean[3]])
 
     for email_phone in emails_phones:
         email = email_phone[0].lower()
@@ -41,12 +41,12 @@ def main():
         for rec in records:
             if rec.registryStatus != 'IN':
                 print(f"Record already sent off: {email}, {rec.registryStatus}")
-                rec_studyteam = studyTeamData.objects.get(id=rec.studyTeamData_id)
+            rec_studyteam = studyTeamData.objects.get(id=rec.studyTeamData_id)
             rec_studyteam.studyTeamOptOut = "True"
             rec_studyteam.studyTeamLastModifiedDateTime = modify_time
             rec_studyteam.save()
 
-            rec_icdata = iCData.objects.get(id=rec.icData_id)
+            rec_icdata = iCData.objects.get(id=rec.iCData_id)
             rec_icdata.iCOptOut = True
             rec_icdata.iCLastModifiedDateTime = modify_time
             rec_icdata.save()
