@@ -58,7 +58,7 @@ def create_row(record):
     return final_dict
 
 
-def output_stats(df, outfile)
+def output_stats(df, outfile):
     out_log = outfile + ".log"
 
     log_desc = df.describe(include='all').transpose()
@@ -87,9 +87,9 @@ def main(facility, outfile, updateStatus=None):
         registrantData__facilities_w_in_100_mi__in=[facility_obj],
         registryStatus='IN'
         ).exclude(
-        registrantData__icData__iCOptOut=True
+        iCData__iCOptOut=True
         ).exclude(
-        registrantData__studyTeamData__studyTeamOptOut="True"
+        studyTeamData__studyTeamOptOut="True"
         )
 
     if len(relevant_records) == 0:
