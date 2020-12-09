@@ -20,6 +20,8 @@ for facility in facilities:
         continue
     if 'vha' not in facility_id:
         continue
+    if Facility.objects.filter(facility_id=facility_id).exists():
+        continue
     facility_obj = Facility(
         facility_id=facility_id,
         name=facility['properties']['name'][0:100],
