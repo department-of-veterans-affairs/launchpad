@@ -13,6 +13,8 @@ infilename = "/home/ubuntu/all_records_in_use.csv"
 
 infile = open(infilename, 'r')
 
+missing = []
+
 i = 0
 for line in infile:
     i += 1
@@ -21,16 +23,25 @@ for line in infile:
     registrant = line.strip().split(",")
     if registrant[0] == 'firstName':
         continue # header row
-    relevant_records = Record.objects.filter(registrantData__firstName=registrant[0],
-        registrantData__email=registrant[1],
-        registrantData__phone=registrant[2])
+    first_name = registrant[0]
+    email = registrant[1]
+    phone = registrant[2]
+    relevant_records = Record.objects.filter(registrantData__firstName=email)
+    if len(relevant_records) == 0:
+        relevant_records = Record.objects.filter(registrantData__firstName=phone)
+    if len(relevant_records) == 0:
+        missing.append([registrant])
+        continue
     if len(relevant_records) > 1:
-        print(relevant_records)
+        num = len(relevant_records)
+        print(f"Multiple for {email} {num}")
     for rec in relevant_records:
         if registrant[3] == 'studyTeam':
             updateStatus = 'ST'
-        if registrant[3] == 'icScreen':
+        elif registrant[3] == ['icScreen', 'ICScreen']:
             updateStatus = 'IC'
+        else:
+            print(f"Problem with updatestatus {registrant[3]}")
         rec.registryStatus = updateStatus
         today = dt.datetime.now()
         current_date = today.strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -38,3 +49,6 @@ for line in infile:
         rec.save(update_fields=['registryStatus', 'recordLastModifiedDateTime'])
 
 infile.close()
+num_missing = len(missing)
+print(f"Num missing {num_missing}")
+print(missing)

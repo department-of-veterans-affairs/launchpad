@@ -64,6 +64,11 @@ def output_stats(df, outfile):
     log_desc = df.describe(include='all').transpose()
     log_desc.to_csv(out_log, mode="w")
 
+    df["age_bin"]  = pd.cut(df["age"], [17, 40, 65, 120])
+    age_df = df["age_bin"].value_counts().reset_index()
+    age_df["AGE_PERCENT"] = age_df["age_bin"] / age_df["age_bin"].sum()
+    age_df.to_csv(out_log, index=False, mode="a")
+
     gender_df = df["GENDER"].value_counts().reset_index()
     gender_df["GENDER_PERCENT"] = gender_df["GENDER"] / gender_df["GENDER"].sum()
     gender_df.to_csv(out_log, index=False, mode="a")
