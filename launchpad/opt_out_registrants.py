@@ -12,7 +12,8 @@ django.setup()
 
 from rocketship.models import Record, iCData, studyTeamData
 
-FILENAME = "/home/ubuntu/opt-outs-2020-12-3_formatted.csv"
+#FILENAME = "/home/ubuntu/opt-outs-2020-12-3_formatted.csv"
+FILENAME = "data/opt_out/opt-outs-2020-12-11.csv"
 
 def main():
     today = dt.datetime.now()
