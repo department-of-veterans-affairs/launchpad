@@ -113,6 +113,8 @@ def main(facility, outfile, updateStatus=None):
             rec.save(update_fields=['registryStatus', 'recordLastModifiedDateTime'])
 
     relevant_df = pd.DataFrame.from_records(relevant_record_list)
+    facility_name = facility_obj.name.replace(" ", "_")
+    relevant_df['facility_name'] = facility_name
     relevant_df.to_csv(outfile, index=False, na_rep='')
 
     output_stats(relevant_df, outfile)
