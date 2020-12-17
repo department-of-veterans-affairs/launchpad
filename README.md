@@ -18,10 +18,15 @@
     * curl command:  curl -X GET 'https://sandbox-api.va.gov/services/va_facilities/v0/facilities/all' --header 'apikey:... >
     * python load_facilities.py
 * Make sure registry status is current
-    * i.e. load_registry_status.py
+    * Uncomment scripts in update_registry_status.sh and run them all in that order
 * Make sure relevant people are opted out
     * i.e. opt_out_registrants.py
+* There are also some one off name changes that I haven't added yet.
 * Load genisis db:
     * ./fetch_data_from_genisis.sh
 * Extract relevant registrants for study sites:
-    * ./output_facility_lists.sh
+    * Run ./output_facility_lists.sh
+    * The above command will run three scripts:
+        * 1: Output all eligibilty (but not set off) records for each study site
+        * 2: Output a csv of all records
+        * 3: Ouput statistics on all records (ignoring those who opted out, but including those that have been sent off to study teams)

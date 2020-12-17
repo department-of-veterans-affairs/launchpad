@@ -9,7 +9,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'launchpad.settings')
 django.setup()
 
 pd.set_option('display.max_columns', 500)
-
 from rocketship.models import Facility, Record
 from rocketship.config import study_sites
 from extract_registrants_for_studies import create_row
@@ -82,6 +81,8 @@ def main(facility, outfile):
     relevant_df = pd.DataFrame.from_records(relevant_record_list)
     output_stats(relevant_df, outfile, facility)
     return f"{facility} success"
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Output study lists.')
     parser.add_argument('--outfile_prefix', help='Outfile prefix',
