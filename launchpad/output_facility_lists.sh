@@ -19,7 +19,7 @@ python ${WORKING_DIR}/extract_registrants_for_studies.py \
 
 python ${WORKING_DIR}/output_stats.py 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
-python ${WORKING_DIR}/output_all_records.py
+python ${WORKING_DIR}/output_all_records.py 2>> ${LOG_FILE}.err 1>> ${LOG_FILE}
 
 END_TIME=$(date)
 echo "Complete at: "${END_TIME} >> ${LOG_FILE}

@@ -9,4 +9,5 @@
 #python load_registry_status.py data/completed_records/2020-12-10-mark-for-ic.csv id_ic
 #python load_registry_status.py data/completed_records/2020-12-11-mark-for-ic.csv id_ic
 #python load_registry_status.py data/completed_records/2020-12-15-mark-for-ic.csv id_ic
-python load_registry_status.py data/completed_records/2020-12-16-mark-for-ic.csv id_ic
+#python load_registry_status.py data/completed_records/2020-12-16-mark-for-ic.csv id_ic
+python load_registry_status.py data/completed_records/2020-12-22-mark-for-study-team.csv id_st

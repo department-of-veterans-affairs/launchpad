@@ -13,7 +13,8 @@ django.setup()
 from rocketship.models import Record, iCData, studyTeamData
 
 #FILENAME = "/home/ubuntu/opt-outs-2020-12-3_formatted.csv"
-FILENAME = "data/opt_out/opt-outs-2020-12-11.csv"
+#FILENAME = "data/opt_out/opt-outs-2020-12-11.csv"
+FILENAME = "data/opt_out/opt-outs-2020-12-23.csv"
 
 def main():
     today = dt.datetime.now()
@@ -31,8 +32,8 @@ def main():
     for email_phone in emails_phones:
         email = email_phone[0].lower()
         phone = email_phone[1]
-        if len(Record.objects.filter(registrantData__email=email)) > 0:
-            records = Record.objects.filter(registrantData__email=email)
+        if len(Record.objects.filter(registrantData__email__iexact=email)) > 0:
+            records = Record.objects.filter(registrantData__email__iexact=email)
         elif len(Record.objects.filter(registrantData__phone=phone)) > 0:
             records = Record.objects.filter(registrantData__phone=phone)
             print(f"Found phone: {phone}")
