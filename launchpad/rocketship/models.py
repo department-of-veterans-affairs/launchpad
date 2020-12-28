@@ -135,7 +135,7 @@ class RegistrantData(models.Model):
     registrantDataLastModifiedDateTime = models.DateTimeField(auto_now=True)
     registrantDataCreatedDateTime = models.DateTimeField(auto_now_add=True)
     # Additional free text notes, such as communication preferences
-    notes = models.TextField()
+    notes = models.TextField(default='')
 
     def __str__(self):
         return f'<RegistrantData {self.firstName} {self.lastName}>'

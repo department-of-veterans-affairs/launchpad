@@ -31,7 +31,7 @@ regList = ['firstName', 'middle', 'lastName',
     'suffix', 'phone', 'email', 'zipCode', 'veteranDateOfBirth', 'GENDER', 'GENDER_SELF_IDENTIFY_DETAILS',
     'RACE_ETHNICITY', 'VETERAN', 'diagnosed', 'closeContactPositive', 'hospitalized', 'smokeOrVape',
     'HEALTH_HISTORY', 'EMPLOYMENT_STATUS', 'TRANSPORTATION', 'residentsInHome', 'closeContact',
-    'consentAgreementAccepted', 'timezone', 'state', 'age']
+    'consentAgreementAccepted', 'timezone', 'state', 'age', 'notes']
 
 
 def convert_to_string(my_dict):
