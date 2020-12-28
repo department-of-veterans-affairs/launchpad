@@ -15,10 +15,10 @@ with open(fname) as infile:
     facilities = json.loads(infile.read())['features']
 completed = []
 for facility in facilities:
-    facility_id = facility['properties']['id'][0:7]
+    facility_id = facility['properties']['id']
     if facility_id in completed:
         continue
-    if 'vha' not in facility_id:
+    if 'vha' not in facility_id or len(facility_id) > 7:
         continue
     if Facility.objects.filter(facility_id=facility_id).exists():
         continue
@@ -28,6 +28,7 @@ for facility in facilities:
         zip_code=facility['properties']['address']['physical']['zip'][0:5],
         lat=facility['geometry']['coordinates'][1],
         lng=facility['geometry']['coordinates'][0],
+        city=facility['properties']['address']['physical']['city']
     )
     completed.append(facility_id)
     facility_obj.save()
