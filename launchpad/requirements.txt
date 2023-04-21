@@ -18,7 +18,7 @@ pytz==2020.4
 pyzipcode==2.0.0
 requests==2.25.0
 six==1.15.0
-sqlparse==0.4.1
+sqlparse==0.4.4
 toml==0.10.2
 urllib3==1.26.2
 wrapt==1.12.1
